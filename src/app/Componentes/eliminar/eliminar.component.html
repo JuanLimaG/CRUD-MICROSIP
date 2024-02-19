@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4> ELIMINAR ARTICULO</h4>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="idArticulo">ID ARTICULO</label>
+                    <input type="number" class="form-control" name="idArticulo" [(ngModel)]="articulo.idArticulo" readonly>
+                </div> 
+                <div class="form-group">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" class="form-control" name="nombre" [(ngModel)]="articulo.nombre" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="medida">MEDIDA</label>
+                    <input type="text" class="form-control" name="medida" [(ngModel)]="articulo.medida" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="clave">CLAVE</label>
+                    <input type="text" class="form-control" name="clave" [(ngModel)]="articulo.clave" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="precio">PRECIO</label>
+                    <input type="number" class="form-control" name="precio" [(ngModel)]="articulo.precio" readonly>
+                </div>
+                <br>
+                <button class="btn btn-outline-success" (click)="eliminar()">ELIMINAR</button>
+            </form>
+           
+        </div>
+    </div>
+</div>

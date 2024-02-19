@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +11,22 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'MICROSIP';
+
+  constructor(private router : Router){} 
+
+ listar(){
+  this.router.navigate(['listarC']);
+ }
+
+  nuevo(){
+    this.router.navigate(['guardarC']);
+  }
+
+  editar(){
+    this.router.navigate(['editarC']);
+  }
+
+  eliminar(){
+    this.router.navigate(['eliminarC'])
+  }
 }

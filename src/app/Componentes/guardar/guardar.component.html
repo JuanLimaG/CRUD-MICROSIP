@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4> CREAR ARTICULO</h4>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="idArticulo">ID ARTICULO</label>
+                    <input type="number" class="form-control" name="idArticulo" min="1" [(ngModel)]="articulo.idArticulo">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" class="form-control" name="nombre" min="1" [(ngModel)]="articulo.nombre">
+                </div>
+                <div class="form-group">
+                    <label for="medida">MEDIDA</label>
+                    <input type="text" class="form-control" name="medida" min="1" [(ngModel)]="articulo.medida">
+                </div>
+                <div class="form-group">
+                    <label for="clave">CLAVE</label>
+                    <input type="text" class="form-control" name="clave" min="1" [(ngModel)]="articulo.clave">
+                </div>
+                <div class="form-group">
+                    <label for="precio">PRECIO</label>
+                    <input type="number" class="form-control" name="precio"min="1" [(ngModel)]="articulo.precio">
+                </div>
+                <br>
+                <button class="btn btn-outline-success" (click)="guardar()">GUARDAR</button>
+            </form>
+           
+        </div>
+    </div>
+</div>
